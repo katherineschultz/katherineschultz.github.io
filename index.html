@@ -2,9 +2,59 @@
 <meta charset=utf-8>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
     <title>Katherine Stringfield Schultz</title>
 <style>
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 * {
     box-sizing: border-box;
@@ -19,29 +69,20 @@ body {
     background-size: 100%
 }
 
-a {
-    color: #668f66;
-    text-decoration: none;
-}
-
 .trans {
     width: 75%;
-    margin: 10px auto;
+    margin: 5px auto;
     background-color: rgba(255,255,255,.4);
-    padding: 1px;
     border-radius: 10px;
-    overflow: auto;
+    padding-top: 3px;
 }
 
-.topphoto {
+.box {
+    margin: 3px auto;
+    background-color: rgba(255,255,255,.5);
+    padding: 10px;
+    border-radius: 10px;
     width: 95%;
-    margin: 5px auto 0px auto;
-    text-align: center;
-}
-
-.bacon {
-    max-width: 500px;
-    border-radius: 10px;
 }
 
 h1 {
@@ -55,11 +96,9 @@ h3 {
     color: #008B00;
 }
 
-.box {
-    margin: 3px auto;
-    background-color: rgba(255,255,255,.5);
-    padding: 5px;
-    border-radius: 10px;
+a {
+    color: #668f66;
+    text-decoration: none;
 }
 
 ul {
@@ -68,16 +107,11 @@ ul {
 
 li {
     padding: 5px;
-    text-indent: -20px;
-}
-
-.contentbox {
-    width: 95%;
+    margin-left: 9px;
 }
 
 .name {
     width: 75%;
-    margin-top: 10px;
 }
 
 .thumb {
@@ -85,39 +119,34 @@ li {
 }
 
 .thumbimg {
-    max-width: 200px;
+    width: 125px;
     border-radius: 10px;
 }
 
-.footer {
-    width: 500px;
-    margin: 10px auto;
-    overflow: auto;
-}
-
 .photo {
-    margin: 2px 20px;
-    max-width: 300px;
-    float: right;
+    background-color: rgba(255,255,255,0);
+    text-align: center;
+    width: 75%;
+    margin-top: 10px;
 }
 
 .me {
-    max-width: 300px;
     border-radius: 50%;
-    text-align: center;
+    width: 100%;
 }
 
 .connect {
-    margin-top: 40px;
-    margin-left: -15px;
+    background-color: rgba(255,255,255,0);
+    width: 50%;
+    text-align: center;
+}
+
+.icon li {
+    margin-left: 0px;
+    margin-bottom: 8px;
 }
 
 .icons {
-    padding: 0px 20px;
-}
-
-.email {
-    margin: 5px 0px;
     border: 1px solid white;
     color: #668f66;
     background-color: rgba(255,255,255,.6);
@@ -125,23 +154,6 @@ li {
     border-radius: 10px;
     font-size: 18px;
 }
-
-.viz {
-    width: 30px;
-    margin: 20px 0px 5px 0px;
-}
-
-.about {
-    width: 100px;
-    margin: 5px 0px;
-}
-
-.fb {
-    width: 100px;
-    margin: 5px 0px;
-    border-radius: 10px;
-}
-
 
 </style>
 </head>
@@ -151,7 +163,7 @@ li {
 
 <h1 class="name box">Katherine Stringfield Schultz</h1>
 
-<div class="contentbox box">
+<div class="box">
     <h3>Education</h3>
     <ul class="educemp">
         <li><a href="http://www.uchicago.edu/">University of Chicago</a>, BA with Honors, 2001</li>
@@ -159,7 +171,7 @@ li {
     </ul>
 </div>
 
-<div class="contentbox box">
+<div class="box">
     <h3>Employment</h3>
     <ul class="emp">
         <li><a href="http://www.steansfamilyfoundation.org/">Steans Family Foundation</a>, 2001-2003</li>
@@ -168,14 +180,14 @@ li {
     </ul>
 </div>
 
-<div class="contentbox box">
+<div class="box">
     <h3>Portfolio</h3>
     <ul class="port">
         <li class="thumb"><a href="http://katherineschultz.github.io/"><img class="thumbimg" src="thumb3.jpg" alt=""></a></li>
     </ul>
 </div>
 
-<div class="contentbox box">
+<div class="box">
     <h3>Interests</h3>
     <ul class="interests">
         <li>Pet-lover, and <a href="http://www.cityofchicago.org/city/en/depts/cacc.html">Chicago Animal Care and Control</a> volunteer</li>
@@ -184,18 +196,18 @@ li {
     </ul>
 </div>
 
-<div class="footer">
-    <div class="photo">
-        <img class="me" src="ksb.jpg" alt="">
-    </div>
-    <div class="connect">
-        <ul class="icon">
-            <li class="icons"><a class="email" href="mailto:katherineschultz@mac.com">email me</a></li>
-            <li class="icons"><a href="http://vizualize.me/katherineschultz?r=katherineschultz" title="Katherine Schultz's infographic CV on vizualize.me" target="_blank"><img class="viz" src="http://vizualize.me/media/img/socialicons/vizualizeme.png" alt=""></a></li>
-            <li class="icons"><a href="http://www.about.me/katherineschultz/"><img class="about" src="http://zainullabiddin.com/wp-content/uploads/2013/01/about-me-badge.png" alt=""></a></li>
-            <li class="icons"><a href="https://www.facebook.com/katherine.schultz.16" target="_TOP" title="Katherine Schultz"><img class="fb" src="https://badge.facebook.com/badge/100000551672522.2543.33975121.png" style="border: 0px;" alt=""></a></li>
-        </ul>
-    </div>
+<div class="photo box">
+    <img class="me" src="ksb.jpg" alt="">
+</div>
+
+<div class="connect box">
+    <ul class="icon">
+        <li><a class="icons" href="mailto:katherineschultz@mac.com">email me</a></li>
+        <li><a class="icons" href="http://vizualize.me/katherineschultz?r=katherineschultz">vizualize.me</a></li>
+        <li><a class="icons" href="http://www.about.me/katherineschultz/">about.me</a></li>
+        <li><a class="icons" href="https://www.facebook.com/katherine.schultz.16">facebook</a></li>
+        <li><a class="icons" href="www.linkedin.com/pub/katherine-schultz/29/205/8a/">linked in</a></li>
+    </ul>
 </div>
 
 </div>
