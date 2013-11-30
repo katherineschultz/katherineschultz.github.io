@@ -101,6 +101,10 @@ a {
     text-decoration: none;
 }
 
+.color3 {
+    color: #69008b;
+}
+
 ul {
     list-style-type: none;
 }
@@ -349,6 +353,10 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">
 $(function() {
     $('.me, .me2').click(function() {
      $('.photo').toggleClass('swap');
+    });
+
+    $('h1').click(function() {
+     $('h1, h3').toggleClass('color3');
     });
 });
 </script>
