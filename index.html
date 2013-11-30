@@ -135,6 +135,20 @@ li {
     width: 100%;
 }
 
+.me2 {
+    border-radius: 50%;
+    width: 100%;
+    display: none;
+}
+
+.swap .me2 {
+    display: block;
+}
+
+.swap .me {
+    display: none;
+}
+
 .connect {
     background-color: rgba(255,255,255,0);
     text-align: center;
@@ -252,10 +266,9 @@ li {
     .portin {
         text-align: center;
     }
-    .trans {
-        margin: 20px auto;
+    .box {
+    margin: 10px auto;
     }
-
 }
 
 @media (min-width: 1300px) {
@@ -313,6 +326,7 @@ li {
 
 <div class="photo box">
     <img class="me" src="ksb.jpg" alt="">
+    <img class="me2" src="ksb2.jpeg" alt="">
 </div>
 
 <div class="connect box">
@@ -327,7 +341,17 @@ li {
 
 </div>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script
+src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">
+</script>
+
+<script>
+$(function() {
+    $('.me, .me2').click(function() {
+     $('.photo').toggleClass('swap');
+    });
+});
+</script>
 
 </body>
 </html>
