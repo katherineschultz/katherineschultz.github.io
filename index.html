@@ -85,6 +85,10 @@ body {
     width: 95%;
 }
 
+.box2 {
+    background-color: rgba(0,0,0,.1);
+}
+
 h1 {
     font-weight: strong;
     font-size: 26px;
@@ -99,6 +103,10 @@ h3 {
 a {
     color: #668f66;
     text-decoration: none;
+}
+
+.linkcolor {
+    color: #314431;
 }
 
 .color3 {
@@ -357,6 +365,8 @@ $(function() {
 
     $('h1').click(function() {
      $('h1, h3').toggleClass('color3');
+     $('.ed, .em, .portfolio, .interest').toggleClass('box2');
+     $('a').toggleClass('linkcolor');
     });
 });
 </script>
