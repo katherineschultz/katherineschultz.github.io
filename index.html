@@ -94,7 +94,6 @@ h1 {
     font-size: 26px;
     color: #008B00;
     text-align: center;
-    cursor: pointer;
 }
 
 h3 {
@@ -190,12 +189,18 @@ li {
 }
 
 
-@media (min-width: 421px) {
+@media (min-width: 400px) {
     .name {
         width: 65%;
     }
     .connect {
-        width: 90%;
+        width: 80%;
+    }
+}
+
+@media (min-width: 450px) {
+    .connect {
+        width: 70%;
     }
 }
 
@@ -205,12 +210,18 @@ li {
     }
 }
 
+@media (min-width: 515px) {
+    .connect {
+        width: 60%;
+    }
+}
+
 @media (min-width: 527px) {
     .name {
         width: 55%;
     }
     .connect {
-        width: 75%;
+        width: 60%;
     }
 }
 
@@ -226,19 +237,13 @@ li {
     }
 }
 
+@media (min-width: 605px) {
+    .connect {
+        width: 50%;
+    }
+}
+
 @media (min-width: 639px) {
-    .connect {
-        width: 60%;
-    }
-}
-
-@media (min-width: 690px) {
-    .connect {
-        width: 60%;
-    }
-}
-
-@media (min-width: 798px) {
     .connect {
         width: 90%;
     }
@@ -307,17 +312,17 @@ li {
     <div class="ed box">
         <h3>Education</h3>
         <ul class="educ">
+            <li><a href="http://www.starterleague.com/">Starter League</a>, HTML and CSS, 2013</li>
             <li><a href="http://www.uchicago.edu/">University of Chicago</a>, BA with Honors, 2001</li>
-            <li><a href="http://www.starterleague.com/">Starter League</a>, 2013</li>
         </ul>
     </div>
 
     <div class="em box">
         <h3>Employment</h3>
         <ul class="emp">
-            <li><a href="http://www.steansfamilyfoundation.org/">Steans Family Foundation</a>, 2001-2003</li>
-            <li><a href="http://www.uchicago.edu/">University of Chicago</a>, 2003-2005</li>
-            <li><a href="http://www.garfieldconservatory.org/">Garfield Park Conservatory Alliance</a>, 2005-present</li>
+            <li><a href="http://www.garfieldconservatory.org/">Garfield Park Conservatory Alliance</a>, Operations Manager, 2005-present</li>
+            <li><a href="http://www.uchicago.edu/">University of Chicago</a>, List Manager, 2003-2005</li>
+            <li><a href="http://www.steansfamilyfoundation.org/">Steans Family Foundation</a>, Program Coordinator, 2001-2003</li>
         </ul>
     </div>
 </div>
@@ -331,10 +336,11 @@ li {
     </div>
 
     <div class="interest box">
-        <h3>Interests</h3>
+        <h3>Developer Skills</h3>
         <ul class="interests">
-            <li>Pet-lover, and <a href="http://www.cityofchicago.org/city/en/depts/cacc.html">Chicago Animal Care and Control</a> volunteer</li>
-            <li>HTML and CSS developer</li>
+            <li>HTML 5</li>
+            <li>CSS 3</li>
+            <li>Basic JQuery</li>
         </ul>
     </div>
 </div>
@@ -348,8 +354,7 @@ li {
     <ul class="icon">
         <li><a class="icons" href="mailto:katherineschultz@mac.com">email me</a></li>
         <li><a class="icons" href="http://www.about.me/katherineschultz/">about.me</a></li>
-        <li><a class="icons" href="https://www.facebook.com/katherine.schultz.16">facebook</a></li>
-        <li><a class="icons" href="www.linkedin.com/pub/katherine-schultz/29/205/8a/">linked in</a></li>
+        <li><a class="icons" href="http://www.linkedin.com/pub/katherine-schultz/29/205/8a/">linked in</a></li>
         <li><a class="icons" href="http://vizualize.me/katherineschultz?r=katherineschultz">vizualize.me</a></li>
     </ul>
 </div>
@@ -364,12 +369,6 @@ src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">
 $(function() {
     $('.me, .me2').click(function() {
      $('.photo').toggleClass('swap');
-    });
-
-    $('h1').click(function() {
-     $('h1, h3').toggleClass('color3');
-     $('.ed, .em, .portfolio, .interest').toggleClass('box2');
-     $('a').toggleClass('linkcolor');
     });
 });
 </script>
